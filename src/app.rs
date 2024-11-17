@@ -10,7 +10,13 @@ use crate::component::view_post::ViewPost;
 #[component]
 pub fn Navbar() -> impl IntoView {
     view! {
-        <nav>"<navbar>"</nav>
+        <h2>Blog</h2>
+        <nav>
+            <ul>
+                <li><a href="/">"Blog"</a></li>
+                <li><a href="/edit">"Create"</a></li>
+            </ul>
+        </nav>
     }
 }
 #[component]
