@@ -1,10 +1,22 @@
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
+
+//use crate::component::blog_post::BlogPost;
+use crate::component::blog_preview::BlogPreviews;
+use crate::component::edit_post::EditPost;
+use crate::component::view_post::ViewPost;
+
 #[component]
 pub fn Navbar() -> impl IntoView {
     view! {
-        <nav>"esta é a navbar"</nav>
+        <nav>"<navbar>"</nav>
+    }
+}
+#[component]
+pub fn Footer() -> impl IntoView {
+    view! {
+        <footer>"[footer]"</footer>
     }
 }
 #[component]
@@ -21,27 +33,13 @@ pub fn App() -> impl IntoView {
         <Navbar/>
         <Router>
             <main>
-                //<Routes>
-                    //<Route path="" view=|| view! { <h1>"Bem vindo ao Leptos."</h1> }/>
-                    //<Route path="/edit/:post_id?" view=ViewPost/>
-                    //<Route path="/view/:post_id?" view=Editost/>
-                //</Routes>
+                <Routes>
+                    <Route path="" view=BlogPreviews/>
+                    <Route path="/edit/:post_id?" view=ViewPost/>
+                    <Route path="/view/:post_id?" view=EditPost/>
+                </Routes>
             </main>
         </Router>
-
-    }
-}
-
-#[component]
-fn BlogDescription() -> impl IntoView {
-    view! {
-        <h1>"BlogDescription"</h1>
-    }
-}
-
-#[component]
-fn BlogPreviews() -> impl IntoView {
-    view! {
-        <h1>"BlogPreviews"</h1>
+        <Footer/>
     }
 }
