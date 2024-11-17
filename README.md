@@ -2,7 +2,7 @@
 rust and Leptos web app - LinkedIn learning
 
 
-[full stack web application with rust and leptos](https://www.linkedin.com/learning/full-stack-web-applications-with-rust-and-leptos/creating-a-leptos-project?autoSkip=true&resume=false)
+## [Full Stack Web Application with Rust and Leptos](https://www.linkedin.com/learning/full-stack-web-applications-with-rust-and-leptos/creating-a-leptos-project?autoSkip=true&resume=false)
 
 <picture>
     <source srcset="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_Solid_White.svg" media="(prefers-color-scheme: dark)">
