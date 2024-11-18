@@ -81,3 +81,5 @@ This template itself is released under the Unlicense. You should replace the LIC
 
 - Use distributed sqlite: [Turso](https://turso.tech/)
 - move hardcoded to config file
+- check [project](https://github.com/MoonKraken/hotblog)
+
