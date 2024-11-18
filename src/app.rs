@@ -10,13 +10,19 @@ use crate::component::view_post::ViewPost;
 #[component]
 pub fn Navbar() -> impl IntoView {
     view! {
-        <h2>Blog</h2>
-        <nav>
-            <ul>
-                <li><a href="/">"Blog"</a></li>
-                <li><a href="/edit">"Create"</a></li>
-            </ul>
-        </nav>
+        <div class="dark:bg-gray-800 text-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                //title
+                <a href="/" class="text-2xl font-bold">Moonbound</a>
+                // nav bar
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="/" class="hover:text-blue-400">"Blog"</a></li>
+                        <li><a href="/edit" class="hover:text-blue-400">"Create"</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     }
 }
 #[component]
@@ -38,7 +44,7 @@ pub fn App() -> impl IntoView {
 
         <Navbar/>
         <Router>
-            <main>
+            <main class="bg-gray-700 text-gray-200 p-8 h-full">
                 <Routes>
                     <Route path="" view=BlogPreviews/>
                     <Route path="/edit/:post_id?" view=ViewPost/>
